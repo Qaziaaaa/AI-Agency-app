@@ -393,9 +393,9 @@ const TeamSection = () => {
   const { ref, isInView } = useScrollAnimation();
 
   const team = [
-    { name: "Alex Carter", role: "Development Manager", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" },
-    { name: "Sophia Nguyen", role: "Lead AI Automation Engineering", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop" },
-    { name: "Ryan Mitchell", role: "Lead SEO & SEM ROI", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop" },
+    { name: "Alex Carter", role: "Development Manager", image: "/images/team/alex_carter.png" },
+    { name: "Sophia Nguyen", role: "Lead AI Automation Engineering", image: "/images/team/sophia_nguyen.png" },
+    { name: "Ryan Mitchell", role: "Lead SEO & SEM ROI", image: "/images/team/ryan_mitchell.png" },
   ];
 
   return (
