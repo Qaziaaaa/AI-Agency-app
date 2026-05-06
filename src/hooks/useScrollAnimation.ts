@@ -4,9 +4,10 @@ import type { Variants } from "framer-motion";
 
 export const useScrollAnimation = (once = true, amount = 0.3) => {
   const ref = useRef(null);
+  const isDesktop = typeof window !== "undefined" ? window.innerWidth >= 1024 : true;
   const isInView = useInView(ref, { once, amount });
   
-  return { ref, isInView };
+  return { ref, isInView: isDesktop ? isInView : true };
 };
 
 export const fadeInUp: Variants = {

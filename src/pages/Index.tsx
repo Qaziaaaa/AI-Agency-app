@@ -19,10 +19,12 @@ const Index = () => {
     offset: ["start start", "end start"]
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.95]);
-  const blur = useTransform(scrollYProgress, [0, 0.5], [0, 10]);
+  const isDesktop = typeof window !== "undefined" ? window.innerWidth >= 1024 : true;
+
+  const y = useTransform(scrollYProgress, [0, 1], isDesktop ? ["0%", "50%"] : ["0%", "0%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], isDesktop ? [1, 0] : [1, 1]);
+  const scale = useTransform(scrollYProgress, [0, 1], isDesktop ? [1, 0.95] : [1, 1]);
+  const blur = useTransform(scrollYProgress, [0, 0.5], isDesktop ? [0, 10] : [0, 0]);
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
