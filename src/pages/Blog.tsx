@@ -47,7 +47,7 @@ const Blog = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto flex flex-col items-center"
           >
-            <Badge className="mb-8 px-5 py-2 bg-secondary/80 border border-white/10 text-foreground hover:bg-secondary backdrop-blur-md rounded-full text-sm font-medium">Blog</Badge>
+            <Badge className="mb-8 px-5 py-2 bg-secondary/80 border border-purple-500/20 lg:border-purple-500/10 text-foreground hover:bg-secondary backdrop-blur-md rounded-full text-sm font-medium">Blog</Badge>
             <h1 className="text-5xl md:text-6xl lg:text-[5rem] font-bold mb-6 tracking-tight leading-tight">
               Unlock AI Insights with <span className="text-metal-purple">Us</span>
             </h1>
@@ -72,7 +72,7 @@ const Blog = () => {
           >
             {posts.map((post, index) => (
               <motion.div key={index} variants={staggerItem}>
-                <Card className="glass-card p-4 bg-background/50 backdrop-blur-md border border-white/10 cursor-pointer hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.2)] transition-all duration-300 group">
+                <Card className="glass-card p-4 bg-background/50 backdrop-blur-md border border-purple-500/20 lg:border-purple-500/10 cursor-pointer hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.2)] transition-all duration-300 group">
                   <div className="relative aspect-[16/10] overflow-hidden rounded-xl mb-6 bg-background">
                     <motion.img
                       whileHover={{ scale: 1.05 }}

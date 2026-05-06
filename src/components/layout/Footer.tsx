@@ -40,7 +40,7 @@ export const Footer = () => {
             </p>
             <div className="max-w-md">
               <p className="font-medium mb-4 text-foreground">Join our newsletter</p>
-              <div className="flex bg-secondary/30 rounded-xl border border-white/10 p-1.5 backdrop-blur-sm">
+              <div className="flex bg-secondary/30 rounded-xl border border-purple-500/20 lg:border-purple-500/10 p-1.5 backdrop-blur-sm">
                 <Input
                   placeholder="name@email.com"
                   className="bg-transparent border-none outline-none focus-visible:ring-0 shadow-none flex-1 min-w-0"

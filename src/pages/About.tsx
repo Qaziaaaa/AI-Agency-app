@@ -82,7 +82,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto flex flex-col items-center"
           >
-            <Badge className="mb-8 px-5 py-2 bg-secondary/80 border border-white/10 text-foreground hover:bg-secondary backdrop-blur-md rounded-full text-sm font-medium">About Us</Badge>
+            <Badge className="mb-8 px-5 py-2 bg-secondary/80 border border-purple-500/20 lg:border-purple-500/10 text-foreground hover:bg-secondary backdrop-blur-md rounded-full text-sm font-medium">About Us</Badge>
             <h1 className="text-5xl md:text-6xl lg:text-[5rem] font-bold mb-6 tracking-tight leading-tight">
               <span className="text-metal-purple">Intelligent Automation</span> for Modern Businesses
             </h1>
@@ -109,7 +109,7 @@ const About = () => {
             animate={solutionsInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16 flex flex-col items-center"
           >
-            <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-white/10 text-foreground text-sm">Our Solutions</Badge>
+            <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-purple-500/20 lg:border-purple-500/10 text-foreground text-sm">Our Solutions</Badge>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
               AI Solutions That Take Your <span className="text-metal-purple">Business to the Next Level</span>
             </h2>
@@ -126,7 +126,7 @@ const About = () => {
           >
             {solutions.map((solution, index) => (
               <motion.div key={index} variants={staggerItem}>
-                <Card className="glass-card p-8 h-full bg-background/50 backdrop-blur-md border border-white/10 hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.2)] transition-all duration-500 group flex flex-col">
+                <Card className="glass-card p-8 h-full bg-background/50 backdrop-blur-md border border-purple-500/20 lg:border-purple-500/10 hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.2)] transition-all duration-500 group flex flex-col">
                   <div className="w-14 h-14 rounded-2xl bg-secondary/80 flex items-center justify-center mb-6 group-hover:bg-metal-purple transition-all duration-300 shadow-sm">
                     <solution.icon className="w-6 h-6 text-foreground group-hover:text-white transition-colors" />
                   </div>
@@ -148,7 +148,7 @@ const About = () => {
             animate={processInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16 flex flex-col items-center"
           >
-            <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-white/10 text-foreground text-sm">Our Process</Badge>
+            <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-purple-500/20 lg:border-purple-500/10 text-foreground text-sm">Our Process</Badge>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
               Our Simple, Swift, <span className="text-metal-purple">and Scalable Process</span>
             </h2>
@@ -165,7 +165,7 @@ const About = () => {
           >
             {process.map((item, index) => (
               <motion.div key={index} variants={staggerItem}>
-                <Card className="glass-card p-8 h-full bg-background/50 backdrop-blur-md border border-white/10 text-center relative overflow-hidden group hover:border-fuchsia-500/40 hover:shadow-[0_0_30px_-5px_rgba(217,70,239,0.2)] transition-all duration-500">
+                <Card className="glass-card p-8 h-full bg-background/50 backdrop-blur-md border border-purple-500/20 lg:border-purple-500/10 text-center relative overflow-hidden group hover:border-fuchsia-500/40 hover:shadow-[0_0_30px_-5px_rgba(217,70,239,0.2)] transition-all duration-500">
                   <div className="absolute top-4 right-4 w-16 h-16 rounded-full bg-secondary/50 flex items-center justify-center text-4xl font-black text-muted-foreground/10 group-hover:text-metal-purple group-hover:opacity-20 transition-all duration-500 pointer-events-none">
                     {item.step}
                   </div>
@@ -194,7 +194,7 @@ const About = () => {
             animate={benefitsInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16 flex flex-col items-center"
           >
-            <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-white/10 text-foreground text-sm">Key Benefits</Badge>
+            <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-purple-500/20 lg:border-purple-500/10 text-foreground text-sm">Key Benefits</Badge>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
               The Key Benefits of <span className="text-metal-purple">AI for Your Growth</span>
             </h2>
@@ -208,7 +208,7 @@ const About = () => {
           >
             {benefits.map((benefit, index) => (
               <motion.div key={index} variants={staggerItem}>
-                <Card className="glass-card p-8 bg-background/50 backdrop-blur-md border border-white/10 flex gap-6 hover:shadow-xl hover:shadow-violet-500/10 hover:border-violet-500/40 transition-all duration-500 group">
+                <Card className="glass-card p-8 bg-background/50 backdrop-blur-md border border-purple-500/20 lg:border-purple-500/10 flex gap-6 hover:shadow-xl hover:shadow-violet-500/10 hover:border-violet-500/40 transition-all duration-500 group">
                   <div className="w-14 h-14 rounded-2xl bg-secondary/80 flex items-center justify-center flex-shrink-0 group-hover:bg-metal-purple transition-all duration-300">
                     <benefit.icon className="w-6 h-6 text-foreground group-hover:text-white transition-colors" />
                   </div>
@@ -232,7 +232,7 @@ const About = () => {
             animate={testimonialsInView ? { opacity: 1, y: 0 } : {}}
             className="text-center mb-16 flex flex-col items-center"
           >
-            <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-white/10 text-foreground text-sm">Testimonials</Badge>
+            <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-purple-500/20 lg:border-purple-500/10 text-foreground text-sm">Testimonials</Badge>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
               Why Businesses Love <span className="text-metal-purple">Our Solutions</span>
             </h2>
@@ -246,7 +246,7 @@ const About = () => {
           >
             {testimonials.map((testimonial, index) => (
               <motion.div key={index} variants={staggerItem}>
-                <Card className="glass-card p-10 bg-background/50 backdrop-blur-md border border-white/10 hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.1)] transition-all duration-500">
+                <Card className="glass-card p-10 bg-background/50 backdrop-blur-md border border-purple-500/20 lg:border-purple-500/10 hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.1)] transition-all duration-500">
                   <div className="flex gap-1 mb-8">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-5 h-5 fill-violet-500 text-violet-500" />
@@ -254,7 +254,7 @@ const About = () => {
                   </div>
                   <p className="text-xl md:text-2xl leading-relaxed mb-8 italic text-foreground/90 font-medium">"{testimonial.content}"</p>
                   <div className="flex items-center gap-4">
-                    <div className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center border border-white/10">
+                    <div className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center border border-purple-500/20 lg:border-purple-500/10">
                       <span className="text-2xl font-bold text-foreground">
                         {testimonial.name.charAt(0)}
                       </span>
