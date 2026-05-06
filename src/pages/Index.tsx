@@ -433,7 +433,7 @@ const TeamSection = () => {
                     transition={{ duration: 0.6 }}
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover grayscale blur-[1px] opacity-80 group-hover:blur-0 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                    className="w-full h-full object-cover transition-all duration-700"
                   />
                   <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl pointer-events-none" />
                 </div>
