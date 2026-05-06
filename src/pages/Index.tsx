@@ -88,7 +88,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
-              className="text-5xl md:text-6xl lg:text-[5.5rem] font-extrabold mb-8 leading-[1.05] tracking-tight flex items-center justify-center gap-4 whitespace-nowrap"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] font-extrabold mb-8 leading-[1.1] tracking-tight flex flex-wrap items-center justify-center gap-3 md:gap-4"
             >
               <span>Helping Businesses</span>
               <span className="text-metal-purple">Grow</span>
@@ -108,11 +108,11 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5, ease: "easeOut" }}
-              className="flex flex-col sm:flex-row gap-5 justify-center items-center mb-20 w-full"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center items-center mb-16 md:mb-20 w-full px-4 sm:px-0"
             >
               <Button
                 size="lg"
-                className="rounded-2xl px-10 py-8 text-lg bg-metal-purple hover:scale-105 transition-all shadow-none font-semibold"
+                className="w-full sm:w-auto rounded-2xl px-8 md:px-10 py-7 md:py-8 text-base md:text-lg bg-metal-purple hover:scale-105 transition-all shadow-none font-semibold"
               >
                 Use For Free
                 <ArrowRight className="ml-3 w-5 h-5" />
@@ -120,7 +120,7 @@ const Index = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="rounded-2xl px-10 py-8 text-lg border-white/20 bg-background/50 backdrop-blur-sm hover:bg-white/10 transition-all shadow-none text-foreground font-semibold"
+                className="w-full sm:w-auto rounded-2xl px-8 md:px-10 py-7 md:py-8 text-base md:text-lg border-white/20 bg-background/50 backdrop-blur-sm hover:bg-white/10 transition-all shadow-none text-foreground font-semibold"
               >
                 Another AI Template
               </Button>
@@ -184,7 +184,7 @@ const Index = () => {
       < section className="py-20 md:py-24 relative border-t border-border/40 bg-gradient-to-b from-background to-secondary/5" >
         <div className="container mx-auto px-6 text-center">
           <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-white/10 text-foreground text-sm">Who We Are</Badge>
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
             Who We <span className="text-metal-purple">Are</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-24 leading-relaxed">
@@ -253,7 +253,7 @@ const ValuesSection = () => {
         className="text-center mb-20"
       >
         <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-white/10 text-foreground text-sm">Our Values</Badge>
-        <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
           The Values Behind <span className="text-metal-purple">xTRAI</span>
         </h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -321,8 +321,8 @@ const ComparisonSection = () => {
           className="text-center mb-20"
         >
           <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-white/10 text-foreground text-sm">Why AI?</Badge>
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
-            What makes us stand<br />out in the <span className="text-metal-purple">industry</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
+            What makes us stand<br className="hidden md:block" />out in the <span className="text-metal-purple">industry</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Discover the difference between traditional manual approaches and xTRAI AI-driven solutions. Learn how automation saves time and maximizes efficiency.
@@ -407,7 +407,7 @@ const TeamSection = () => {
           className="text-center mb-20"
         >
           <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-white/10 text-foreground text-sm">Our Team</Badge>
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
             Meet the Minds Behind <span className="text-metal-purple">xTRAI</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -468,8 +468,8 @@ const FAQSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <Badge className="mb-8 px-5 py-2 bg-secondary/50 border border-white/10 text-foreground text-sm">FAQ</Badge>
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
-            We've Got the Answers<br />You're <span className="text-metal-purple">Looking For</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
+            We've Got the Answers<br className="hidden md:block" />You're <span className="text-metal-purple">Looking For</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Quick answers to your AI automation inquiries right here.
@@ -515,8 +515,8 @@ const CTASection = () => {
               <Sparkles className="w-4 h-4 mr-2 text-fuchsia-400" />
               Ready to Elevate?
             </Badge>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black mb-6 tracking-tight leading-[1.05]">
-              Automate the process.<br />
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-6 tracking-tight leading-[1.05]">
+              Automate the process.<br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-400">
                 Focus on the results.
               </span>
@@ -528,7 +528,7 @@ const CTASection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                className="rounded-2xl px-10 py-7 text-lg bg-white text-black hover:bg-gray-100 hover:scale-[1.02] transition-all shadow-[0_0_20px_-5px_rgba(255,255,255,0.4)] font-bold group"
+                className="w-full sm:w-auto rounded-2xl px-8 md:px-10 py-6 md:py-7 text-base md:text-lg bg-white text-black hover:bg-gray-100 hover:scale-[1.02] transition-all shadow-[0_0_20px_-5px_rgba(255,255,255,0.4)] font-bold group"
               >
                 Get Started Now
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -536,7 +536,7 @@ const CTASection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="rounded-2xl px-10 py-7 text-lg border-white/20 bg-transparent hover:bg-white/10 text-white transition-all font-semibold"
+                className="w-full sm:w-auto rounded-2xl px-8 md:px-10 py-6 md:py-7 text-base md:text-lg border-white/20 bg-transparent hover:bg-white/10 text-white transition-all font-semibold"
               >
                 Schedule a Demo
               </Button>
