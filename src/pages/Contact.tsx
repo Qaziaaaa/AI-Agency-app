@@ -23,7 +23,7 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto flex flex-col items-center"
           >
-            <Badge className="mb-8 px-5 py-2 bg-secondary/80 border border-purple-500/20 lg:border-purple-500/10 text-foreground hover:bg-secondary backdrop-blur-md rounded-full text-sm font-medium">Contact</Badge>
+            <Badge className="mb-8 px-5 py-2 bg-secondary/80 border border-purple-500/30 lg:border-purple-500/10 text-foreground hover:bg-secondary backdrop-blur-md rounded-full text-sm font-medium">Contact</Badge>
             <h1 className="text-5xl md:text-6xl lg:text-[5rem] font-bold mb-6 tracking-tight leading-tight">
               Get in Touch with <span className="text-metal-purple">Us</span>
             </h1>
@@ -45,7 +45,7 @@ const Contact = () => {
               transition={{ duration: 0.6 }}
               className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
             >
-              <Card className="glass-card p-8 bg-background/50 backdrop-blur-md border border-purple-500/20 lg:border-purple-500/10 hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.2)] transition-all duration-500 group flex flex-col items-center text-center gap-4">
+              <Card className="glass-card p-8 bg-background/50 backdrop-blur-md border border-purple-500/30 lg:border-purple-500/10 hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.2)] transition-all duration-500 group flex flex-col items-center text-center gap-4">
                 <div className="w-14 h-14 rounded-2xl bg-secondary/80 flex items-center justify-center group-hover:bg-metal-purple transition-all duration-300 shadow-sm">
                   <Mail className="w-6 h-6 text-foreground group-hover:text-white transition-colors" />
                 </div>
@@ -54,7 +54,7 @@ const Contact = () => {
                   <p className="text-muted-foreground text-base">admin@xtrai.com</p>
                 </div>
               </Card>
-              <Card className="glass-card p-8 bg-background/50 backdrop-blur-md border border-purple-500/20 lg:border-purple-500/10 hover:border-fuchsia-500/40 hover:shadow-[0_0_30px_-5px_rgba(217,70,239,0.2)] transition-all duration-500 group flex flex-col items-center text-center gap-4">
+              <Card className="glass-card p-8 bg-background/50 backdrop-blur-md border border-purple-500/30 lg:border-purple-500/10 hover:border-fuchsia-500/40 hover:shadow-[0_0_30px_-5px_rgba(217,70,239,0.2)] transition-all duration-500 group flex flex-col items-center text-center gap-4">
                 <div className="w-14 h-14 rounded-2xl bg-secondary/80 flex items-center justify-center group-hover:bg-metal-purple transition-all duration-300 shadow-sm">
                   <Phone className="w-6 h-6 text-foreground group-hover:text-white transition-colors" />
                 </div>
@@ -71,7 +71,7 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ delay: 0.2, duration: 0.7 }}
             >
-              <Card className="glass-card p-8 md:p-14 bg-background/60 backdrop-blur-xl border border-purple-500/20 lg:border-purple-500/10 shadow-[0_0_40px_-10px_rgba(139,92,246,0.1)]">
+              <Card className="glass-card p-8 md:p-14 bg-background/60 backdrop-blur-xl border border-purple-500/30 lg:border-purple-500/10 shadow-[0_0_40px_-10px_rgba(139,92,246,0.1)]">
                 <form className="space-y-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-2">
