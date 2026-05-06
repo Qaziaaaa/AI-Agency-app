@@ -135,7 +135,7 @@ const Index = () => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left max-w-5xl mx-auto"
             >
-              <Card className="glass-card p-8 bg-background/40 backdrop-blur-md border border-white/10 hover:border-violet-500/50 transition-colors group">
+              <Card className="glass-card p-8 bg-background/40 backdrop-blur-md border border-white/30 lg:border-white/10 hover:border-violet-500/50 transition-colors group">
                 <div className="flex items-center gap-3 mb-4 text-white font-bold text-2xl group-hover:text-metal-purple transition-colors">
                   <Rocket className="w-6 h-6 text-violet-400" />
                   150+ Built around
@@ -144,7 +144,7 @@ const Index = () => {
                   Trusted by businesses globally, delivering scalable AI solutions to drive growth.
                 </p>
               </Card>
-              <Card className="glass-card p-8 bg-background/40 backdrop-blur-md border border-white/10 hover:border-fuchsia-500/50 transition-colors group">
+              <Card className="glass-card p-8 bg-background/40 backdrop-blur-md border border-white/30 lg:border-white/10 hover:border-fuchsia-500/50 transition-colors group">
                 <div className="flex items-center gap-3 mb-4 text-white font-bold text-2xl group-hover:text-metal-purple transition-colors">
                   <Target className="w-6 h-6 text-fuchsia-400" />
                   1M+ Raised
@@ -153,7 +153,7 @@ const Index = () => {
                   Empowering companies to secure substantial funding through optimization.
                 </p>
               </Card>
-              <Card className="glass-card p-8 bg-background/40 backdrop-blur-md border border-white/10 hover:border-purple-500/50 transition-colors group">
+              <Card className="glass-card p-8 bg-background/40 backdrop-blur-md border border-white/30 lg:border-white/10 hover:border-purple-500/50 transition-colors group">
                 <div className="flex items-center gap-3 mb-4 text-white font-bold text-2xl group-hover:text-metal-purple transition-colors">
                   <Zap className="w-6 h-6 text-purple-400" />
                   99% Positive
@@ -272,7 +272,7 @@ const ValuesSection = () => {
       >
         {values.map((value, index) => (
           <motion.div key={index} variants={staggerItem}>
-            <Card className="glass-card p-10 h-full bg-background/50 border-white/10 hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.2)] transition-all duration-500 group">
+            <Card className="glass-card p-10 h-full bg-background/50 border border-white/30 lg:border-white/10 hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.2)] transition-all duration-500 group">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center group-hover:bg-metal-purple transition-all duration-500">
                   <value.icon className="w-6 h-6 text-foreground group-hover:text-white" fill="currentColor" />
@@ -335,7 +335,7 @@ const ComparisonSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-0 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl"
+          className="grid grid-cols-1 md:grid-cols-2 gap-0 max-w-5xl mx-auto rounded-[2.5rem] overflow-hidden border border-white/30 lg:border-white/10 shadow-2xl"
         >
           {/* Manual Work */}
           <div className="p-12 md:p-16 bg-background/60 backdrop-blur-xl">
@@ -426,7 +426,7 @@ const TeamSection = () => {
         >
           {team.map((member, index) => (
             <motion.div key={index} variants={staggerItem}>
-              <Card className="glass-card p-8 bg-background/50 border-white/10 group hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.2)] transition-all duration-500">
+              <Card className="glass-card p-8 bg-background/50 border border-white/30 lg:border-white/10 group hover:border-violet-500/40 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.2)] transition-all duration-500">
                 <div className="relative mb-6 w-full aspect-square rounded-2xl overflow-hidden bg-background/50">
                   <motion.img
                     whileHover={{ scale: 1.05 }}
@@ -481,7 +481,7 @@ const FAQSection = () => {
         <div className="max-w-3xl mx-auto relative z-10">
           <Accordion type="single" collapsible className="w-full space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="glass-card bg-background/60 backdrop-blur-md border border-white/10 px-6 rounded-xl data-[state=open]:border-violet-500/50 transition-all duration-300">
+              <AccordionItem key={index} value={`item-${index}`} className="glass-card bg-background/60 backdrop-blur-md border border-white/30 lg:border-white/10 px-6 rounded-xl data-[state=open]:border-violet-500/50 transition-all duration-300">
                 <AccordionTrigger className="text-lg md:text-xl font-medium text-foreground/90 hover:no-underline hover:text-foreground text-left py-6">
                   {faq.q}
                 </AccordionTrigger>
@@ -508,7 +508,7 @@ const CTASection = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-16 bg-background/40 border border-white/10 rounded-[2.5rem] p-10 lg:p-16 backdrop-blur-xl relative overflow-hidden shadow-2xl">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-16 bg-background/40 border border-white/30 lg:border-white/10 rounded-[2.5rem] p-10 lg:p-16 backdrop-blur-xl relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-metal-purple to-transparent opacity-50" />
 
           {/* Text Content Left */}
@@ -547,7 +547,7 @@ const CTASection = () => {
 
           {/* Abstract Graphic Right */}
           <div className="lg:w-5/12 w-full max-w-md relative z-10 flex justify-center">
-            <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-[3rem] border border-white/10 bg-black/50 backdrop-blur-sm flex items-center justify-center relative overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-all duration-700">
+            <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-[3rem] border border-white/30 lg:border-white/10 bg-black/50 backdrop-blur-sm flex items-center justify-center relative overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-all duration-700">
               <div className="absolute inset-0 bg-gradient-to-tr from-violet-600/30 to-fuchsia-600/30" />
 
               <div className="w-[85%] h-[85%] border border-white/5 rounded-[2rem] flex items-center justify-center relative z-10 bg-background/60 shadow-inner">
